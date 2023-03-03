@@ -1,5 +1,6 @@
 import './globals.css'
 import { Playfair_Display, Quicksand } from 'next/font/google'
+import NavMobile from './NavBar'
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
@@ -23,7 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${quicksand.variable}`}>
-      <body>{children}</body>
+      <body>
+        <NavMobile />
+        {children}
+      </body>
     </html>
   )
 }
