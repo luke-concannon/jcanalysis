@@ -25,12 +25,12 @@ const NavMobile = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="shadow-inner backdrop-blur-2xl flex flex-col items-end text-right justify-end pb-36 absolute w-full h-screen top-24 right-0"
+            className="shadow-inner backdrop-blur-2xl flex flex-col items-end text-right justify-start absolute w-full h-screen top-24 right-0"
             onClick={handleParentClick}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.1 }}
           >
             <NavItems
               ulClass="w-1/2 rounded-lg p-6 text-stone-400 font-sans font-semibold flex flex-col list-none space-y-6 space-between text-xl"
