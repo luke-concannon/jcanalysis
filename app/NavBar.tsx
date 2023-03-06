@@ -21,7 +21,7 @@ const NavBar = () => {
             <NavItems
               ulClass="text-stone-400 font-sans font-semibold flex flex-row list-none space-x-4 space-between items-center sm:text-xs md:text-sm lg:text-sm xl:text-sm 2xl:text-sm"
               liClass="border-l-2 border-r-2 ease-in duration-50 border-[#393939] hover:underline rounded-sm px-2 hover:text-[#393939] hover:border-stone-400"
-              buttonClass="hover:bg-blue-700 bg-[#393939] font-normal active:scale-95 duration-100 ease-in-out text-white drop-shadow-lg p-2 rounded-md"
+              buttonClass="bg-blue-700 hover:bg-blue-900 font-normal active:scale-95 duration-100 ease-in-out text-white drop-shadow-lg p-2 rounded-md"
             />
           </div>
           <div className="flex sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden">

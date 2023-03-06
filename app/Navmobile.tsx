@@ -35,7 +35,7 @@ const NavMobile = () => {
             <NavItems
               ulClass="w-1/2 rounded-lg p-6 text-stone-400 font-sans font-semibold flex flex-col list-none space-y-6 space-between text-xl"
               liClass="active:text-blue-400 border-r-2 ease-in duration-50 border-[#393939] hover:underline rounded-sm px-2 hover:text-[#393939] hover:border-stone-400"
-              buttonClass="hover:bg-blue-700 bg-[#393939] font-normal active:scale-95 duration-100 ease-in-out text-white drop-shadow-lg p-2 rounded-md"
+              buttonClass="bg-blue-700 hover:bg-blue-900 font-normal active:scale-95 duration-100 ease-in-out text-white drop-shadow-lg p-2 rounded-md"
             />
           </motion.div>
         )}
