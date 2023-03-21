@@ -1,4 +1,4 @@
-import './globals.css'
+import '../styles/globals.css'
 import { Playfair_Display, Quicksand } from 'next/font/google'
 import NavBar from './NavBar'
 
@@ -23,9 +23,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${quicksand.variable}`}>
-      <body>
-        <NavBar />
+    <html
+      lang="en"
+      className={`${playfair.variable} ${quicksand.variable} supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh]`}
+    >
+      <body className="h-full flex flex-col justify-start">
+        <header className="shadow-md w-screen relative h-24 md:h-28 top-0 bg-white">
+          <NavBar />
+        </header>
         {children}
       </body>
     </html>
